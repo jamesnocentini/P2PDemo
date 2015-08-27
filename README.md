@@ -29,7 +29,7 @@ $ cordova plugin add https://github.com/jamiltz/Couchbase-Lite-PhoneGap-Plugin.g
 Build the web app:
 
 ```
-$ npm start
+$ npm run build
 ```
 
 ### Resolving Gradle Conflicts For Android
@@ -54,7 +54,7 @@ android {
 }
 ```
 
-### Usage (Android & iOS)
+### Usage (Android)
 
 To build and run the project for Android, run the following from your Terminal or Command Prompt:
 

@@ -1,6 +1,6 @@
 {
   "log": ["*"],
-  "interface": ":4985",
+  "interface": ":5984",
   "databases": {
     "mydb": {
       "server": "walrus:",
