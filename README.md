@@ -13,7 +13,7 @@ Sample application that's using the Couchbase Lite Listener for P2P syncing in a
 
 ### Getting started
 
-After cloning the repository, add the development platforms:
+After cloning the repository, run the following commands in the `cordova` folder:
 
 ```
 $ cordova platform add android
