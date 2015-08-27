@@ -57,9 +57,6 @@ var Form = React.createClass({
                 <button onClick={this.create} style={styles.button} id="create-doc">
                     Create document
                 </button>
-                <button onClick={this.deleteDatabase} style={styles.button}>
-                    Delete database
-                </button>
                 <p style={styles.title}>Target database:</p>
                 <input id="target" ref="target" style={styles.input} type="text" />
                 <button onClick={this.replicate} style={styles.button} id="replicate">Replicate</button>

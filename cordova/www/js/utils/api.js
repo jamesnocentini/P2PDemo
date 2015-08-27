@@ -67,8 +67,14 @@ var api = {
         }).then(function(res) {
             return res.json();
         }).then(function(res) {
-            console.log(res);
             self.createDatabase();
+        });
+    },
+    deleteDocument: function(id, rev) {
+        return fetch(this.url + this.databaseName + '/' + id + '?rev=' + rev, {
+            method: 'delete'
+        }).then(function (res) {
+            return res.json();
         });
     }
 };
