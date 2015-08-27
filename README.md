@@ -24,7 +24,7 @@ Then install all the required plugins:
 
 ```
 $ cordova plugin add cordova-plugin-whitelist
-cordova plugin add https://github.com/jamiltz/Couchbase-Lite-PhoneGap-Plugin.git
+$ cordova plugin add https://github.com/jamiltz/Couchbase-Lite-PhoneGap-Plugin.git
 ```
 
 Build the web app:
