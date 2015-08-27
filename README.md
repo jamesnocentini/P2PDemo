@@ -79,9 +79,17 @@ At this point, you may find CORS errors because the web app is fetching data fro
 $ open -a Google\ Chrome\ Canary --args --disable-web-security
 ```
 
-Open `localhost:8000` in Chrome 
-
+Open `localhost:8000` in Chrome and you see the UI:
+ 
 ![](http://cl.ly/image/320V1p1h1P43/Screen%20Shot%202015-08-27%20at%2011.44.10.png)
+
+But because the Couchbase Lite Listener isn't running, nothing will be saved to the database. To run the application on an android device or emulator:
+
+```
+$ cordova run android --target=<device_id>
+```
+
+To get the list of target, run `cordova run --list`.
 
 The Android stock emulators and Genymotion often run in their own VM. You can setup port forwarding with adb to expose the listener endpoint on your host machine:
 

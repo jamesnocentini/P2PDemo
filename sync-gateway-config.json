@@ -1,0 +1,10 @@
+{
+  "log": ["*"],
+  "interface": ":4985",
+  "databases": {
+    "mydb": {
+      "server": "walrus:",
+      "users": { "GUEST": { "disabled": false, "admin_channels": ["*"] } }
+    }
+  }
+}
