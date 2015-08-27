@@ -1,4 +1,4 @@
 .idea/
-node_modules/
-plugins/
-platforms/
+cordova/node_modules/
+cordova/plugins/
+cordova/platforms/
