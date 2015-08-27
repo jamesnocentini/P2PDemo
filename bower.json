@@ -1,0 +1,16 @@
+{
+  "name": "CrewAppCordova",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jamiltz/CrewAppCordova",
+  "authors": [
+    "James Nocentini <james.nocentini@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

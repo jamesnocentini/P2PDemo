@@ -1,0 +1,26 @@
+{
+  "name": "P2PDemo",
+  "version": "0.0.0",
+  "description": "Sample application that's using the Couchbase Lite Listener for P2P syncing in a PhoneGap app and on Windows.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && browserify -t 6to5ify ./www/js/app.jsx -o ./www/dist/bundle.js",
+    "watch": "watchify -t 6to5ify ./www/js/app.jsx -o ./www/dist/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jamiltz/P2PDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiltz/P2PDemo/issues"
+  },
+  "homepage": "https://github.com/jamiltz/P2PDemo",
+  "devDependencies": {
+    "watchify": "^3.3.1",
+    "react": "^0.13.3",
+    "browserify": "^11.0.1",
+    "6to5ify": "^4.1.1"
+  }
+}

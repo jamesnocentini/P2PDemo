@@ -1,0 +1,78 @@
+var React = require('react')
+    , api = require('./../utils/api');
+
+var List = React.createClass({
+<<<<<<< HEAD
+=======
+    getStyles: function() {
+        return {
+            column: {
+                width: '100px',
+                textAlign: 'left'
+            },
+            myTable: {
+                margin: '0 auto',
+                textAlign: 'center'
+            }
+        };
+    },
+>>>>>>> tmp2
+    getInitialState: function() {
+        return {
+            docs: []
+        };
+    },
+    componentDidMount: function() {
+        var self = this;
+        api.listen(function(docs) {
+            api.allDocs()
+                .then((res) => {
+                    self.setState({
+                        docs: res.rows
+                    })
+                });
+        });
+
+    },
+    render: function () {
+<<<<<<< HEAD
+        var docs = this.state.docs.map(function (doc, i) {
+            return (
+                <div>
+                    {i} - {doc.id}
+                </div>
+=======
+
+        var styles = this.getStyles();
+
+        var docs = this.state.docs.map(function (doc, i) {
+            return (
+                <tr>
+                    <td style={styles.column}>{i}</td>
+                    <td style={styles.column}>{doc.doc.name}</td>
+                    <td style={styles.column}>{doc.doc.meal}</td>
+                </tr>
+>>>>>>> tmp2
+            );
+        });
+
+        return (
+            <div>
+<<<<<<< HEAD
+                {docs}
+=======
+                <table style={styles.myTable}>
+                    <tr>
+                        <th style={styles.column}>Number</th>
+                        <th style={styles.column}>Name</th>
+                        <th style={styles.column}>Meal</th>
+                    </tr>
+                    {docs}
+                </table>
+>>>>>>> tmp2
+            </div>
+        );
+    }
+});
+
+module.exports = List;
