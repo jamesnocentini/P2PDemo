@@ -17,7 +17,6 @@ After cloning the repository, run the following commands in the `cordova` folder
 
 ```
 $ cordova platform add android
-$ cordova platform add ios
 ```
 
 Then install all the required plugins:
@@ -60,11 +59,9 @@ android {
 To build and run the project for Android, run the following from your Terminal or Command Prompt:
 
 ```
-ionic build android
+cordova build android
 adb install -r platforms/android/build/outputs/apk/android-debug.apk
 ```
-
-For iOS, run `ionic build ios` and open the Xcode project file found in the **platforms/ios** directory.
 
 ### Development environment
 
@@ -81,6 +78,10 @@ At this point, you may find CORS errors because the web app is fetching data fro
 ```
 $ open -a Google\ Chrome\ Canary --args --disable-web-security
 ```
+
+Open `localhost:8000` in Chrome 
+
+![](http://cl.ly/image/320V1p1h1P43/Screen%20Shot%202015-08-27%20at%2011.44.10.png)
 
 The Android stock emulators and Genymotion often run in their own VM. You can setup port forwarding with adb to expose the listener endpoint on your host machine:
 
