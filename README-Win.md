@@ -21,13 +21,16 @@ Both Java *and* Python directories should be added, each separate by a semicolon
 ### Using CBLWin.bat
 
 The easiest way to run the P2PDemo under Windows is to use the CBLWin.bat file, which is part of this repository.
+
 Note that the bat file must be run from the top-level directory of the repo, as it relies on relative paths to access the demo files.
 Additionally, the bat file will not work unless both Java and Python have been added to the Windows PATH.
 
 The bat file will start 3 main applications:
+
 1. Starts the Couchbase Lite Listener (and Couchabse Lite Database) running under Java
 2. Starts a simple web server in the www directory running under Python
 3. Opens the demo web-app in Google Chrome with a specific security setting
+
 
 The commands for each of these steps can be seen diretly in the CBLWin.bat file.
 
