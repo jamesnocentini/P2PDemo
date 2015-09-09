@@ -104,7 +104,7 @@ You can optionally set the `device_id` which is displayed by running the `adb de
 This sample application can connect to the [Couchbase Sync Gateway](http://developer.couchbase.com/mobile/develop/guides/sync-gateway/) to keep data in sync across devices and platforms.  To use with Sync Gateway, first [download the latest version](http://www.couchbase.com/nosql-databases/downloads#cb-mobile) from the Couchbase website.  Extract the downloaded copy and from your Command Prompt (Windows) or Terminal (Linux / Mac) execute the following:
 
 ```
-/path/to/sync/gateway/bin/sync_gateway /path/to/ionic/project/sync-gateway-config.json
+/path/to/sync/gateway/bin/sync_gateway /path/to/project/sync-gateway-config.json
 ```
 
 This will start the Sync Gateway using the configuration file provided in this project.  It will be serving on http://localhost:4984 and http://localhost:4985.
